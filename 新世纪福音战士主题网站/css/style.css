@@ -1,0 +1,563 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+header {
+  width: 100%;
+  height: 1000px;
+  background: url(../imgs/bg-2.jpg) no-repeat center / cover;
+  margin-bottom: 20px;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  background-color: rgba(41, 50, 47, 0.361);
+  position: fixed;
+  z-index: 999;
+}
+header nav .logo {
+  width: 200px;
+  height: 60px;
+}
+header nav .logo img {
+  width: 120px;
+  height: 60px;
+  position: fixed;
+}
+header nav .logo .sign {
+  width: 50px;
+  height: 60px;
+  line-height: 60px;
+  position: absolute;
+}
+header nav ul {
+  width: 1000px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li {
+  height: 100%;
+  line-height: 60px;
+  font-size: larger;
+}
+header nav ul li a {
+  color: aliceblue;
+}
+header nav ul li:hover a {
+  color: #60a8ef;
+}
+main .back {
+  display: block;
+  position: fixed;
+  border: #aea9a945 solid 2px;
+  background-color: #f4f3f386;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 80px;
+  z-index: 900;
+  transition: all 0.5;
+}
+main .back:hover {
+  background-color: #aea9a945;
+}
+main .back span {
+  color: rgba(105, 97, 97, 0.637);
+  display: block;
+  text-align: center;
+}
+main .back img {
+  width: 45px;
+  height: 45px;
+  margin-left: 10px;
+}
+main .role {
+  margin-bottom: 40px;
+}
+main .role span {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+main .role img {
+  width: 600px;
+  height: 800px;
+}
+main .role .main {
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px;
+}
+main .role li {
+  width: 240px;
+  display: block;
+  float: left;
+  position: relative;
+  /* 这里最后设置一下图片之间的切换时间 */
+  transition: all 0.5s;
+}
+main .role .flag {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #131313;
+  background: rgba(123, 120, 120, 0.5);
+}
+main .role .flag span {
+  font-size: 16px;
+}
+main .role .flag:hover span {
+  color: #e2cb9a;
+}
+main .role .main:hover li {
+  width: 200px;
+}
+main .role .main li:hover {
+  width: 400px;
+}
+main .mates {
+  width: 1600px;
+  height: 1400px;
+  min-width: 1500px;
+  min-height: 1400px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+main .mates span {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+main .mates .bottom {
+  position: relative;
+  left: 45%;
+  bottom: -40px;
+  display: block;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 20px;
+  border: 2px solid #bbb;
+  color: #000000;
+}
+main .mates .bottom a {
+  color: #000000;
+}
+main .mates .bottom:link {
+  color: #000;
+}
+main .mates .bottom:hover {
+  background-color: rgba(188, 182, 182, 0.171);
+  cursor: pointer;
+  color: #8b8888;
+}
+main .mates .mate {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .mates .mate li {
+  flex: 1;
+  padding: 20px;
+}
+main .mates figure {
+  width: 200px;
+  margin: 0 auto;
+}
+main .mates figure img {
+  width: 200px;
+  height: 300px;
+  transition: opacity 0.4s ease-in-out;
+}
+main .mates figure figcaption {
+  text-align: center;
+}
+main .mates figure img:hover {
+  opacity: 0.8;
+}
+.mecha {
+  width: 1600px;
+  min-width: 1500px;
+  margin: 0 auto;
+  height: 900px;
+  position: relative;
+}
+.mecha span.tit {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+.mecha .out {
+  width: 1000px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+  top: 100px;
+}
+.mecha .out .inner {
+  width: 100%;
+  height: 100%;
+}
+.mecha .out .inner .img {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  transition: 0.3s;
+}
+.mecha .out .inner .img img {
+  width: 100%;
+  height: 100%;
+}
+.mecha .out .inner .img .info {
+  display: none;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: rgba(230, 222, 222, 0.365);
+  border: #777 solid 1px;
+  border-radius: 20px;
+}
+.mecha .out .arrow {
+  font-size: 32px;
+}
+.mecha .out .arrow i {
+  position: absolute;
+  color: #fff;
+  z-index: 9999;
+  cursor: pointer;
+  top: 84px;
+}
+.mecha .out .arrow .left {
+  display: block;
+  left: -40px;
+  top: auto;
+}
+.mecha .out .arrow .left img {
+  height: 60px;
+}
+.mecha .out .arrow .right {
+  display: block;
+  left: 980px;
+  top: auto;
+}
+.mecha .out .arrow .right img {
+  height: 60px;
+}
+.mecha .out .button {
+  width: 175px;
+  height: 15px;
+  position: absolute;
+  z-index: 9999;
+  left: 52%;
+  bottom: -100%;
+  transform: translateX(-50%);
+}
+.mecha .out .button .dot {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 20px 5px;
+  cursor: pointer;
+  background-color: silver;
+}
+.mecha .out .button .dot:first-child {
+  background-color: #1486bb;
+}
+.mecha .out #last {
+  transform: translateX(0);
+  z-index: 9;
+  opacity: 1;
+}
+.mecha .out #first {
+  transform: translateX(200px) scale(1.3);
+  z-index: 99;
+  opacity: 1;
+}
+.mecha .out #first .info {
+  transition: all 1s;
+  display: block;
+}
+.mecha .out #second {
+  transform: translateX(400px);
+  z-index: 9;
+  opacity: 1;
+}
+.mecha .out #left {
+  transform: translateX(-100px);
+  z-index: 1;
+  opacity: 0;
+}
+.mecha .out #right {
+  transform: translateX(500px);
+  z-index: 1;
+  opacity: 0;
+}
+.mecha .bottom {
+  position: relative;
+  right: 300px;
+  bottom: 100px;
+  display: block;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 20px;
+  border: 2px solid #bbb;
+}
+.mecha .bottom a {
+  color: black;
+}
+.mecha .bottom:hover {
+  background-color: rgba(188, 182, 182, 0.171);
+  cursor: pointer;
+}
+.mecha .bottom:hover a {
+  color: #bbb;
+}
+.movie {
+  width: 1600px;
+  min-width: 1500px;
+  margin: 0 auto;
+  height: 1700px;
+  display: block;
+}
+.movie span.tit {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+.movie .bottom {
+  position: absolute;
+  left: 45%;
+  bottom: -100px;
+  border-radius: 20px;
+  border: 2px solid #bbb;
+  display: block;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: black;
+}
+.movie .bottom a {
+  display: block;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: black;
+}
+.movie .bottom a:link {
+  color: black;
+}
+.movie .bottom:hover {
+  background-color: rgba(188, 182, 182, 0.171);
+  cursor: pointer;
+}
+.movie .bottom:hover a {
+  color: #bbb;
+}
+.movie .box2 {
+  widows: 100%;
+  height: auto;
+  margin-top: 120px;
+  position: relative;
+}
+.movie .timeline {
+  display: flex;
+  flex-direction: column;
+}
+.movie .timeline li {
+  width: 200px;
+  margin: 0 auto;
+}
+.movie .timeline li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  cursor: pointer;
+  z-index: 6;
+}
+.movie .timeline li .info {
+  width: 400px;
+  height: 200px;
+}
+.movie .line {
+  width: 2px;
+  height: 90%;
+  display: block;
+  position: absolute;
+  background-color: #757582;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  margin-left: -1px;
+}
+.movie .timeline > li:nth-child(odd) {
+  padding-left: 200px;
+  margin-bottom: 50px;
+  left: 100px;
+}
+.movie .timeline > li:nth-child(odd) img {
+  margin-left: -50px;
+  display: block;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+.movie .timeline > li:nth-child(odd) .info {
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 70px;
+  display: block;
+}
+.movie .timeline > li:nth-child(even) {
+  padding-right: 300px;
+  margin-bottom: 50px;
+}
+.movie .timeline > li:nth-child(even) img {
+  display: block;
+  box-sizing: border-box;
+  margin-left: 200px;
+  margin-bottom: 50px;
+  z-index: 6;
+}
+.movie .timeline > li:nth-child(even) .info {
+  position: absolute;
+  text-align: right;
+  margin-top: -100px;
+  margin-left: -220px;
+  display: block;
+}
+.movie ul.timeline > li:nth-child(1) {
+  position: relative;
+  padding: 0;
+  top: -100px;
+}
+.movie ul.timeline > li:nth-child(1) .info {
+  position: absolute !important;
+  display: block !important;
+  top: 50px !important;
+  margin: 0 0 0 -110px !important;
+  left: 180px !important;
+}
+.movie .more {
+  text-align: justify;
+  text-indent: 20px;
+  width: 400px;
+  padding: 5px 0;
+  color: #777;
+  font-style: italic;
+}
+.battle {
+  width: 100%;
+  height: 1000px;
+  margin: 120px 0;
+  overflow: hidden;
+}
+.battle span.tit {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+}
+.battle .contain {
+  width: 100vw;
+  height: 80vh;
+  margin-top: 50px;
+}
+.battle .contain .shaped-left {
+  position: absolute;
+  z-index: 1;
+  background: url("../imgs/bettle_1.jpg") no-repeat top / cover black;
+  width: 100%;
+  height: 80vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: all 0.6s linear;
+}
+.battle .contain .shaped-right {
+  position: absolute;
+  z-index: 2;
+  background: url("../imgs/bettle_2.jpg") no-repeat top / cover black;
+  width: 70%;
+  height: 80vh;
+  right: 0;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 10% 100%);
+  transition: all 0.6s linear;
+}
+footer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: url("../imgs/footer_bg.jpg") center center no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  z-index: 800;
+}
+footer h2 {
+  font-size: 40px;
+  color: #ffffff;
+}
+footer .wrapper {
+  text-align: center;
+}
+footer .contact input,
+footer .message textarea {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  outline: none;
+  padding: 20px;
+  margin-top: 30px;
+}
+footer .contact,
+footer .message {
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+  margin: 0 90px;
+}
+footer .message textarea {
+  height: 200px;
+  resize: none;
+}
+footer .contact input::placeholder,
+footer .message textarea::placeholder {
+  color: #bbb;
+}
+footer .button {
+  padding: 20px 80px;
+  margin-top: 30px;
+  background-color: rgba(40, 146, 184, 0.642);
+  color: #fff;
+  border-color: #96dddd;
+  border-radius: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  letter-spacing: 5px;
+}

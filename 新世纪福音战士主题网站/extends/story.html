@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>观影推荐</title>
+    <link rel="shortcut icon" href="../imgs/icons/icons_title.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        w {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            width: 100%;
+            height: 900px;
+            background: url(../imgs/story/top.jpg) no-repeat center/cover;
+        }
+
+        header nav {
+            width: 100%;
+            display: flex;
+            background-color: rgba(41, 50, 47, 0.361);
+            position: fixed;
+            z-index: 999;
+        }
+
+        header nav .logo {
+            width: 200px;
+            height: 60px;
+        }
+
+        header nav .logo img {
+            width: 120px;
+            height: 60px;
+            position: fixed;
+        }
+
+        header nav .logo .sign {
+            width: 50px;
+            height: 60px;
+            line-height: 60px;
+            position: absolute;
+        }
+
+        header nav ul {
+            width: 1000px;
+            height: 60px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        header nav ul li {
+            height: 100%;
+            line-height: 60px;
+            font-size: larger;
+        }
+
+        header nav ul li a {
+            color: aliceblue;
+        }
+
+        header nav ul li:hover a {
+            color: #3e92e5;
+            background-color: rgba(137, 197, 221, 0.721);
+        }
+
+        .main {
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin-top: 20px;
+
+        }
+
+        .main h2 {
+            display: block;
+            width: 200px;
+
+            text-align: center;
+            border-bottom: greenyellow solid 2px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+       
+
+        .box {
+            margin: 120px 0;
+        }
+
+        .box>h3 {
+            font-size: 40px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .box article {
+            width: 60%;
+            height: 500px;
+            margin: 0 auto;
+            padding: 50px 10px;
+            position: relative;
+        }
+
+        .box article img {
+            width: 600px;
+            height: 400px;
+        }
+
+        .box article:nth-child(even) img {
+            float: left;
+            padding-right: 30px;
+        }
+
+        .box article:nth-child(odd) img {
+            float: right;
+            padding-left: 30px;
+        }
+
+        .box article h2 {
+            font-size: 30px;
+        }
+
+        .box article p {
+            font-size: 16px;
+            line-height: 30px;
+            padding: 10px;
+            text-indent: 10px;
+            font-style: italic;
+        }
+        .box article p::selection{
+            color: aquamarine;
+        }
+     
+            
+
+     
+
+        .back {
+            display: block;
+            position: fixed;
+            border: #aea9a945 solid 2px;
+            background-color: #dedbdb86;
+            top: 700px;
+            /* left: 50px; */
+            right: 50px;
+            width: 100px;
+            height: 100px;
+        }
+        .back:hover{
+            background-color: #aea9a945;
+        }
+        .back span {
+            color: rgba(107, 106, 106, 0.637);
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back img {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- 导航栏 -->
+
+            <nav>
+                <!-- logo -->
+                <a href="../index.html" title="返回首页">
+                    <i class="logo">
+                        <img src="../imgs/logo 2.png" alt="">
+                    </i>
+                </a>
+
+                <ul>
+                    <li><a href="../index.html#role">主要成员</a></li>
+                    <li><a href="../index.html#mates">主要人物</a></li>
+                    <li><a href="../index.html#mecha">战斗机甲</a></li>
+                    <li><a href="../index.html#movie">影视推荐</a></li>
+                    <li><a href="../index.html#battle">正反对决</a></li>
+                    <li><a href="../index.html#contact">发表观点</a></li>
+                    <li><a href="../login.html" class="sign">登录/注册</a></li>
+                </ul>
+
+
+            </nav>
+        </header>
+        <div class="main w">
+            <a href="../index.html#movie" class="back" title="点击回到首页"><img src="../imgs/icons/back.png" alt="">
+                <br><span>返回首页</span> </a>
+            <h2>影视推荐</h2>
+            <div class="box">
+                <article>
+                    <img src="../imgs/story/tv.jpg" alt="TV版">
+                    <h3>新世纪福音战士 TV 1-26话</h3>
+                    <p>《新世纪福音战士》简称《EVA》。该片于1995年10月4日-1996年3月27日在日本首播，全26集。故事描述的是一个有关“第二次冲击”的记事。”使徒”，除了破坏就是破坏，而后，3名可以驾驶EVA的少男少女，人们把希望都寄托在了他们身上。
+                    </p>
+                </article>
+                <article>
+                    <img src="../imgs/story/D&L.jpg" alt="死于新生">
+                    <h3>新世纪福音战士剧场版：死与新生</h3>
+                    <p>
+                        《新世纪福音战士剧场版：死与新生》是日本东映公司于1997年3月15日发行的动画电影。该片是动画片《新世纪福音战士》剧场版的第一部。该片分成“DEATH篇（死亡篇）”与“REBIRTH篇（新生篇）”两个部分。死亡篇是以原TV版动画第1-24集的内容为基础，重新剪辑制作的总集篇。“新生篇”内容承接《新世纪福音战士TV版》第24集。</p>
+                </article>
+                <article>
+                    <img src="../imgs/story/For_you.jpg" alt="真心为你">
+                    <h3>新世纪福音战士剧场版：Air/真心为你</h3>
+                    <p>《新世纪福音战士 Air/真心为你》，于1997年7月19日在日本首映。该片简称：《夏エヴァ》《EOE》。该片是动画片《新世纪福音战士》剧场版的第二部。在2007年《新世纪福音战士新剧场版》发行了之后，该片也被称为“旧剧场版”。 </p>
+                </article>
+                <article>
+                    <img src="../imgs/story/new_1.jpg" alt="《福音战士新剧场版:序》">
+                    <h3>福音战士新剧场版：序</h3>
+                    <p>《福音战士新剧场版:序》是2007年重新制作的Evangelion动画电影。这是福音战士新剧场版系列的第一部。作品是基于原作的重新制作，而不是续编。作为福音战士新剧场版系列的第一部，故事沿袭电视版第1至6集、漫画版单行本第1至3集的剧情。剧情讲述突袭世界的大灾难“第二次冲击”后，世界在废墟之上重建。14岁的少年碇真嗣被父亲碇元渡叫到第3新东京市。本以为能见到父亲迎接的他，却见到名为“使徒”的巨大生物与军队交火。危急之下，特务机关NERV的葛城美里将真嗣救下，并将其带往碇元渡所统领的NERV总部。但迎接真嗣的，却是父亲冷酷地命令：驾驶称为“EVA”的巨大人型机器人与使徒战斗。 </p>
+                </article>
+                <article>
+                    <img src="../imgs/story/new_2.jpg" alt="《福音战士新剧场版：破》">
+                    <h3>福音战士新剧场版：破</h3>
+                    <p>《福音战士新剧场版：破》是新剧场版第二部动画片，该片讲述了初号机和2号机，抵抗了第八使徒猛烈的攻击，在这一过程中，淡淡的情愫悄然在这三个青年男女的心中萌生，不久后，第九、十使徒相继降临，真嗣他们面临着生与死的残酷考验。剧情讲述在参拜母亲坟墓的回程途中，真嗣和葛城美里遭遇了第七使徒的攻击，关键时刻2号机势如破竹挫败对手，真嗣也由此结识了2号机的操纵者式波·明日香·兰格蕾。与沉默寡言的绫波丽不同，明日香自信张扬，甚至有些自大，在和真嗣相处的日子里，彼此闹出不少的笑话。 </p>
+                </article>
+                <article>
+                    <img src="../imgs/story/new_3.jpg" alt="《福音战士新剧场版：Q》">
+                    <h3>福音战士新剧场版：Q</h3>
+                    <p>《福音战士新剧场版：Q》是新剧场版第三部动画片，是由摩砂雪、鹤卷和哉、庵野秀明联合执导，绪方惠美、林原惠美、三石琴乃、宫村优子、坂本真绫等联合配音。影片于2012年11月17日在日本上映。故事讲述14年前，初号机疑似神化第一形态的觉醒带来近三冲击，使世界发生前所未有的巨变。在此之后，葛城美里等NERV旧部出走，成立了反抗seele和NERV的Wille。Wille授命明日香和真里夺回被封印在卫星轨道上的初号机和碇真嗣，但绝对禁止真嗣登上初号机的故事。</p>
+                </article>
+                <article>
+                    <img src="../imgs/story/new_4.jpg" alt="《福音战士新剧场版：终》">
+                    <h3>福音战士新剧场版：终</h3>
+                    <p>《福音战士新剧场版：终》是EVA系列的最后一部剧场版电影。故事讲述了碇真嗣在亲眼目睹了近第三次冲击后的世界，决心通过EVA再次神化第一形态觉醒来改变一切，最终重建了一个没有EVA的新世界，碇真嗣也终于不再是那个唯唯诺诺的幼稚少年。 </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
