@@ -1,1 +1,17 @@
 新的1.txt
+
+
+提交时，应该要先 
+git add -a 
+git commit -a -m ''
+git push origin main 
+
+
+如果出现
+TLS certificate verification has been disabled!
+报错
+
+
+git config --global http.sslVerify true
+
+git config --global core.autocrlf false
